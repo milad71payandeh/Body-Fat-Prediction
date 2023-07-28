@@ -25,7 +25,7 @@ import sklearn.neural_network as nn
 # plt.show()
 
 
-#-------Section 3: Dimention Reduction with PCA-------
+#-------Section 3: Dimension Reduction with PCA-------
 # df = pd.read_csv('bodyfat.csv', sep=',', header=0, encoding='utf-8')
 #
 # data = df.to_numpy()
