@@ -9,14 +9,14 @@ import sklearn.decomposition as dec
 import sklearn.linear_model as li
 import sklearn.neural_network as nn
 
-#------Check the Statistical Information of the Dataset-------
+#------Section 1: Check the Statistical Information of the Dataset-------
 # df = pd.read_csv('bodyfat.csv', sep=',', header=0, encoding='utf-8')
 #
 # with pd.option_context('display.max_rows', None,'display.max_columns', None):
 #     print(df.describe())
 
 
-#-----------Check Correlation between Features---------
+#-----------Section 2: Check Correlation between Features---------
 # df = pd.read_csv('bodyfat.csv', sep=',', header=0, encoding='utf-8')
 #
 # correlation = df.corr()
@@ -25,7 +25,7 @@ import sklearn.neural_network as nn
 # plt.show()
 
 
-#-------Dimention Reduction with PCA-------
+#-------Section 3: Dimention Reduction with PCA-------
 # df = pd.read_csv('bodyfat.csv', sep=',', header=0, encoding='utf-8')
 #
 # data = df.to_numpy()
@@ -48,7 +48,7 @@ import sklearn.neural_network as nn
 # print(f'{teX3.shape = }')
 
 
-#--------Check Correlation after PCA------
+#--------Section 4: Check Correlation after PCA------
 # df = pd.read_csv('bodyfat.csv', sep=',', header=0, encoding='utf-8')
 #
 # data = df.to_numpy()
@@ -78,7 +78,7 @@ import sklearn.neural_network as nn
 # plt.show()
 
 
-#-------Build Prediction Model with Linear Regression and Evaluate------
+#-------Section 5: Build Prediction Model with Linear Regression and Evaluate------
 # def result(model, trX, teX, trY, teY):
 #
 #     r2train = model.score(trX, trY)
@@ -139,7 +139,7 @@ import sklearn.neural_network as nn
 # result(Lr, trX3, teX3, trY2, teY2)
 
 
-#-----Build NN and Compare with Regression-----
+#----- Section 6: Build NN and Compare with Regression-----
 def result(model, trX, teX, trY, teY):
 
     r2train = model.score(trX, trY)
